@@ -3,6 +3,7 @@ using System.Collections;
 
 public class turret : MonoBehaviour {
     public bool antiAir;
+	public bool antiGround;
 	public int lv;
 	public int cost;
 	public GameObject nextLv;
@@ -38,34 +39,37 @@ public class turret : MonoBehaviour {
         //}
 
 
-        if (lockOn == false)
-        {
-            Collider[] hitColliders = Physics.OverlapSphere(gameObject.transform.position, range);
-            int i = 0;
-            while (i < hitColliders.Length)
-            {
-                if (antiAir)
-                {
-                    if (hitColliders[i].GetComponent<FlyingEnemy>())
-                    {
-                        enemy = hitColliders[i].gameObject;
-                        lockOn = true;
-                        break;
-                    }
-                    else
-                        i++;
+        if (lockOn == false) {
+			Collider[] hitColliders = Physics.OverlapSphere (gameObject.transform.position, range);
+			int i = 0;
+			while (i < hitColliders.Length) {
+				if (antiAir && antiGround==false) {
+					if (hitColliders [i].GetComponent<FlyingEnemy> ()) {
+						enemy = hitColliders [i].gameObject;
+						lockOn = true;
+						break;
+					} else
+						i++;
                     
-                }
-                else if (hitColliders[i].GetComponent<Monster>() && hitColliders[i].GetComponent<FlyingEnemy>()==false)
-                {
-                    enemy = hitColliders[i].gameObject;
-                    lockOn = true;
-                    break;
-                }
-                else
-                    i++;
-            }
-        }
+				}
+				if (antiGround && antiAir==false) {
+					if (hitColliders [i].GetComponent<Monster> () && hitColliders [i].GetComponent<FlyingEnemy> () == false) {
+						enemy = hitColliders [i].gameObject;
+						lockOn = true;
+						break;
+					} else
+						i++;
+				}
+				if (antiGround && antiAir) {
+					if (hitColliders [i].GetComponent<Monster> ()) {
+						enemy = hitColliders [i].gameObject;
+						lockOn = true;
+						break;
+					} else
+						i++;
+				}
+			}
+		}
 		if (lockOn == true) {
 			if(enemy==null){
 				lockOn=false;

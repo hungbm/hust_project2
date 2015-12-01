@@ -1,3 +1,22 @@
-Base path: S:/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-136400
+Base path: D:/IDE/Unity/Editor/Data
+Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-5460
 Cmd: getPlatforms
+Cmd: preprocess
+  insize=4905 outsize=835 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=657 outsize=1119 kw= pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=657 outsize=453 kw= pd= ok=1
+Cmd: compileSnippet
+  error: 1 plat 4 at (89): Output value 'vert' is not completely initialized\nCompiling Vertex program with QUALITY_HIGH OCTAVES_4 SCATTERING_ON
+  api=4 type=0 insize=4019 outsize=1656 kw=QUALITY_HIGH OCTAVES_4 SCATTERING_ON pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=4019 outsize=9423 kw=QUALITY_HIGH OCTAVES_4 SCATTERING_ON pd= ok=1
+Cmd: preprocess
+  insize=859 outsize=1587 ok=1
+Cmd: preprocess
+  insize=2590 outsize=1216 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=1679 outsize=1412 kw= pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=1679 outsize=1509 kw= pd= ok=1
