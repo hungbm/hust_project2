@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<RootNamespace></RootNamespace>
+	<ProjectGuid>{961B614D-6081-09FE-00A9-C0629A951831}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_2_1;UNITY_5_2;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_REFLECTION_BUFFERS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>S:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>S:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Floating Script\floating_object_csharp.cs" />
+     <Compile Include="Assets\PreFab\Cannons\Cannon-2\explosion.cs" />
+     <Compile Include="Assets\PreFab\Detonator Explosion Framework\Sample Supporting Emitters\DetonatorSprayHelper.cs" />
+     <Compile Include="Assets\PreFab\Detonator Explosion Framework\System\Detonator.cs" />
+     <Compile Include="Assets\PreFab\Detonator Explosion Framework\System\DetonatorBurstEmitter.cs" />
+     <Compile Include="Assets\PreFab\Detonator Explosion Framework\System\DetonatorCloudRing.cs" />
+     <Compile Include="Assets\PreFab\Detonator Explosion Framework\System\DetonatorComponent.cs" />
+     <Compile Include="Assets\PreFab\Detonator Explosion Framework\System\DetonatorFireball.cs" />
+     <Compile Include="Assets\PreFab\Detonator Explosion Framework\System\DetonatorForce.cs" />
+     <Compile Include="Assets\PreFab\Detonator Explosion Framework\System\DetonatorGlow.cs" />
+     <Compile Include="Assets\PreFab\Detonator Explosion Framework\System\DetonatorHeatwave.cs" />
+     <Compile Include="Assets\PreFab\Detonator Explosion Framework\System\DetonatorLight.cs" />
+     <Compile Include="Assets\PreFab\Detonator Explosion Framework\System\DetonatorShockwave.cs" />
+     <Compile Include="Assets\PreFab\Detonator Explosion Framework\System\DetonatorSmoke.cs" />
+     <Compile Include="Assets\PreFab\Detonator Explosion Framework\System\DetonatorSound.cs" />
+     <Compile Include="Assets\PreFab\Detonator Explosion Framework\System\DetonatorSparks.cs" />
+     <Compile Include="Assets\PreFab\Detonator Explosion Framework\System\DetonatorSpray.cs" />
+     <Compile Include="Assets\PreFab\Detonator Explosion Framework\TestScene\DetonatorTest.cs" />
+     <Compile Include="Assets\PreFab\Detonator Explosion Framework\TestScene\TouchToMouse.cs" />
+     <Compile Include="Assets\PreFab\PorglezompPyroclastics\ExplosionMat.cs" />
+     <Compile Include="Assets\PreFab\Water Flow Free\Scripts\WaterFlow.cs" />
+     <Compile Include="Assets\PreFab\Water Flow Free\Scripts\WaterFlowOrbitCamera.cs" />
+     <Compile Include="Assets\Script\BigCannonBronze.cs" />
+     <Compile Include="Assets\Script\BigCannonGold.cs" />
+     <Compile Include="Assets\Script\BigCannonSilver.cs" />
+     <Compile Include="Assets\Script\ButtonGun.cs" />
+     <Compile Include="Assets\Script\ButtonManager.cs" />
+     <Compile Include="Assets\Script\ButtonQuit.cs" />
+     <Compile Include="Assets\Script\ButtonRetry.cs" />
+     <Compile Include="Assets\Script\ButtonSell.cs" />
+     <Compile Include="Assets\Script\ButtonUpgrade.cs" />
+     <Compile Include="Assets\Script\BuyButton.cs" />
+     <Compile Include="Assets\Script\Cannon2Level1.cs" />
+     <Compile Include="Assets\Script\Cannon2Level2.cs" />
+     <Compile Include="Assets\Script\Cannon2Level3.cs" />
+     <Compile Include="Assets\Script\CannonBallMover.cs" />
+     <Compile Include="Assets\Script\CannonScript.cs" />
+     <Compile Include="Assets\Script\CoinScript.cs" />
+     <Compile Include="Assets\Script\DetailOfItem.cs" />
+     <Compile Include="Assets\Script\Enemy\HealthBar.cs" />
+     <Compile Include="Assets\Script\Enemy\Monster.cs" />
+     <Compile Include="Assets\Script\Enemy\MonsterController.cs" />
+     <Compile Include="Assets\Script\Enemy\PathFinding.cs" />
+     <Compile Include="Assets\Script\Enemy\Spawn.cs" />
+     <Compile Include="Assets\Script\Fading.cs" />
+     <Compile Include="Assets\Script\FlyingEnemy.cs" />
+     <Compile Include="Assets\Script\GUIController1.cs" />
+     <Compile Include="Assets\Script\GameControllerHighScoreScene.cs" />
+     <Compile Include="Assets\Script\GameControllerLevelScene.cs" />
+     <Compile Include="Assets\Script\GameControllerScript.cs" />
+     <Compile Include="Assets\Script\GameControllerSettingScene.cs" />
+     <Compile Include="Assets\Script\GameControllerWikiScene.cs" />
+     <Compile Include="Assets\Script\GameOverPanel.cs" />
+     <Compile Include="Assets\Script\GameScene.cs" />
+     <Compile Include="Assets\Script\Hinden.cs" />
+     <Compile Include="Assets\Script\IsCalled.cs" />
+     <Compile Include="Assets\Script\ItemGun4.cs" />
+     <Compile Include="Assets\Script\ItemGun5.cs" />
+     <Compile Include="Assets\Script\ItemGun6.cs" />
+     <Compile Include="Assets\Script\ItemGun7.cs" />
+     <Compile Include="Assets\Script\ItemGun8.cs" />
+     <Compile Include="Assets\Script\ItemGun9.cs" />
+     <Compile Include="Assets\Script\ItemOfButton.cs" />
+     <Compile Include="Assets\Script\MenuScript.cs" />
+     <Compile Include="Assets\Script\MoviePlayer.cs" />
+     <Compile Include="Assets\Script\PanelUnSScript.cs" />
+     <Compile Include="Assets\Script\PauseGame.cs" />
+     <Compile Include="Assets\Script\PausePanelScript.cs" />
+     <Compile Include="Assets\Script\PickDiff.cs" />
+     <Compile Include="Assets\Script\PirateShip1.cs" />
+     <Compile Include="Assets\Script\PirateShip2.cs" />
+     <Compile Include="Assets\Script\PirateShip3.cs" />
+     <Compile Include="Assets\Script\ProjectileMover.cs" />
+     <Compile Include="Assets\Script\RotateModel.cs" />
+     <Compile Include="Assets\Script\RotatePlayerShip.cs" />
+     <Compile Include="Assets\Script\SetText.cs" />
+     <Compile Include="Assets\Script\ShipSink.cs" />
+     <Compile Include="Assets\Script\ShipSink1.cs" />
+     <Compile Include="Assets\Script\TextCoinScript.cs" />
+     <Compile Include="Assets\Script\TextHealthScript.cs" />
+     <Compile Include="Assets\Script\TextScoreScript.cs" />
+     <Compile Include="Assets\Script\TheCannonLvl1.cs" />
+     <Compile Include="Assets\Script\TheCannonLvl2.cs" />
+     <Compile Include="Assets\Script\TheCannonLvl3.cs" />
+     <Compile Include="Assets\Script\TurnTheShip.cs" />
+     <Compile Include="Assets\Script\Turret\bullet.cs" />
+     <Compile Include="Assets\Script\Turret\turret.cs" />
+     <Compile Include="Assets\Script\UI\BuildUpdate.cs" />
+     <Compile Include="Assets\Script\UI\GuiController.cs" />
+     <Compile Include="Assets\Script\UI\Player.cs" />
+     <Compile Include="Assets\Script\WikiScene.cs" />
+     <Compile Include="Assets\Script\indicatorScript.cs" />
+     <Compile Include="Assets\Script\item1.cs" />
+     <Compile Include="Assets\Script\item2.cs" />
+     <Compile Include="Assets\Script\itemGun2.cs" />
+     <Compile Include="Assets\Script\itemGun3.cs" />
+     <Compile Include="Assets\Script\itemMove.cs" />
+     <Compile Include="Assets\Script\map\Base.cs" />
+     <Compile Include="Assets\Script\map\Box.cs" />
+     <Compile Include="Assets\Script\map\square.cs" />
+     <Compile Include="Assets\Script\playVideo.cs" />
+     <Compile Include="Assets\Script\playsound.cs" />
+     <Compile Include="Assets\Script\property.cs" />
+     <Compile Include="Assets\Script\shotMark.cs" />
+     <Compile Include="Assets\Script\shotMark2.cs" />
+     <Compile Include="Assets\Script\shotMark3.cs" />
+     <None Include="Assets\PreFab\PorglezompPyroclastics\Explosion.shader" />
+     <None Include="Assets\PreFab\Texture\pieces_of_eight\Alt Map.txt" />
+     <None Include="Assets\Old Cannon\Customer Only Download\Thank you for buying_1.txt" />
+     <None Include="Assets\Floating Script\README.txt" />
+     <None Include="Assets\PreFab\Water Flow Free\Shaders\Water Simple.shader" />
+     <None Include="Assets\PreFab\Texture\pieces_of_eight\readme.txt" />
+     <None Include="Assets\PreFab\Detonator Explosion Framework\Resources\Detonator\Textures\HeatDistort.shader" />
+     <None Include="Assets\PreFab\PorglezompPyroclastics\README.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>S:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>S:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Cecil">
+ <HintPath>S:/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>S:/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
